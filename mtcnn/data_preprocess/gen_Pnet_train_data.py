@@ -6,6 +6,7 @@ import sys
 import numpy as np
 import cv2
 import os
+
 sys.path.append(os.getcwd())
 import numpy as np
 from mtcnn.data_preprocess.utils import IoU
@@ -35,9 +36,9 @@ with open(anno_file, 'r') as f:
 num = len(annotations)
 print("%d pics in total" % num)
 
-p_idx = 0 # positive
-n_idx = 0 # negative
-d_idx = 0 # dont care
+p_idx = 0  # positive
+n_idx = 0  # negative
+d_idx = 0  # dont care
 idx = 0
 box_idx = 0
 for annotation in annotations:
